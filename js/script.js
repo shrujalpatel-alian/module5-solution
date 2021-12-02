@@ -83,10 +83,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
-  //buildAndShowHomeHTML,
-  function (request) {
-    buildAndShowHomeHTML(request) 
-  }, // ***** <---- TODO: STEP 1: Substitute [...] ******
+  buildAndShowHomeHTML, // ***** <---- TODO: STEP 1: Substitute [...] ******
+  //function (request) {
+    //buildAndShowHomeHTML(request) 
+  //}, 
   true); // Explicitly setting the flag to get JSON from server processed into an object literal
 });
 // *** finish **
